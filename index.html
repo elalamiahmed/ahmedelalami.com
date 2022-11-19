@@ -271,9 +271,8 @@
 
 
 
-    <script >
-        
-        
+   <script>
+    
 const menuBtn = document.querySelector('#menu-btn');
 const close = document.querySelector('#close-btn');
 const menu = document.querySelector('nav .container ul');
@@ -302,6 +301,7 @@ function myFunction() {
     navItems.forEach(item=>{
         const link = item.querySelector('a');
         link.classList.remove('active');
+        
     })
  }
 
@@ -311,12 +311,17 @@ function myFunction() {
     link.addEventListener('click',()=>{
         changeActiveItem();
        link.classList.add('active');
+       menu.style.display = 'none';
+       
+      
+       
+      
  })
     
  })
 
  
-            </script>
+   </script>
 
     
 </body>
