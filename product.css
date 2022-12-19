@@ -60,5 +60,30 @@
     #productsDiv{
         justify-content: center;
     }
+
+   
     
 }
+
+h2 {
+    text-align: center;
+ }
+
+ header{
+   
+    position: fixed;
+    width: 100%;
+    background-color: black;
+ }
+
+ #span{
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+ }
+ 
+  
+  
+
+    
