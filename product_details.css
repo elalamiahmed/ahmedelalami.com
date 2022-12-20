@@ -76,9 +76,12 @@ font-weight: normal;
 
 @media screen and (max-width : 767px) 
 {
+    #confermation{
+        
+    }
   
     #contentsDiv{
-        display: flex;
+        display: grid;
         
     }
 
@@ -110,11 +113,14 @@ font-weight: normal;
 
 @media screen and (max-width : 1180px) 
 {
+    #confermation{
+       
+    }
     #title{
         width: 100%;
     }
     #contentsDiv{
-        display: flex;
+        display: grid;
         justify-content: center;
         justify-items: center;
     }
@@ -142,8 +148,11 @@ font-weight: normal;
 }
 @media screen and (max-width : 740px) 
 {
+    #confermation{
+        
+    }
     #contentsDiv{
-        display: block;
+        display: grid;
         width: 100%;
 
     }
@@ -155,7 +164,9 @@ font-weight: normal;
         width: 100%;
     }
     #smlimgDiv{
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 100px);
         height: 275px;
         margin-top: 5px;
         flex-wrap: wrap;
@@ -165,9 +176,15 @@ font-weight: normal;
     }
     
     .smimgs{
-        height: 40px;
-        width: 50px;
+        height: 80px;
+        width: 80px;
         border: 0.5px gray solid;
     }
     
+}
+
+#confermation{
+ color: #008000;
+ font-weight: bold;
+ 
 }
