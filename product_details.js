@@ -109,6 +109,11 @@ function IseMPTY()
         
     }
 
+    if(phone.value.length<10)
+    {
+        alert("Invalid number");
+    }
+
     else{
         UploadOrder();
     }
