@@ -109,7 +109,7 @@ function IseMPTY()
         
     }
 
-    if(phone.value.length<10)
+    if(phone.value.length<10 || phone.value.length>10)
     {
         alert("Invalid number");
     }
