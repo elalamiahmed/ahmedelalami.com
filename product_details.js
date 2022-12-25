@@ -149,12 +149,20 @@ function UploadOrder()
     
     alert("Thank you for your Purshase");
  }
- function getShortTitle()
+
+
+ let counter = 0;
+
+ function getShortTitle(orders)
  {
 
-    var id = "id" + Math.random().toString(16).slice(2)
-    return id;
- }
+ 
+   
+      return --counter;
+      
+    
+    
+}
 
 
 
