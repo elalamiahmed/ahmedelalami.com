@@ -201,4 +201,79 @@ h2 {
   .float-button{
     margin-top:16px;
   }
+
+:root {
+    --font-family-aref: "Aref Ruqaa", serif;
+    --font-family-rajdhani: "Rajdhani", sans-serif;
+    --font-family-source: "Source Code Pro", monospace;
+  }
+  .card { 
+    border-radius: 7px;
+    padding: 7px;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    overflow: hidden;
+}
+.card-body {
+  display: flex;
+  gap: 15px;
+}
+.card-body::after {
+  
+  font-size: 18px;
+  font-family: var(--font-family-rajdhani);
+  font-weight: 600;
+  position: absolute;
+  backdrop-filter: blur(10px);
+  padding: 4px 8px;
+  color: red;
+  transform: scale(0);
+  transition: ease-out 200ms;
+}
+.card-body:hover::after {
+  transform: scale(1);
+}
+a#ad-card {
+  text-decoration: none;
+  color: #121212;
+}
+.card-pic {
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+.card-describe {
+  line-height: 20px;
+}
+.card-describe>p:nth-child(1) {
+  color: red;
+  font-size: 27px;
+  font-family: var(--font-family-rajdhani);
+  font-weight: 600;
+}
+.card-describe>p:nth-child(2) {
+  font-size: 18px;
+  font-family: var(--font-family-aref);
+  font-weight: 500;
+}
+.card-describe>p:nth-child(3) {
+  color: green;
+  font-size: 20px;
+  font-family: var(--font-family-source);
+  font-weight: 500;
+}
+#card-coupon {
+  background-color: red;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 4px;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card:active {
+  color: red;
+}
+
     
