@@ -202,78 +202,90 @@ h2 {
     margin-top:16px;
   }
 
-:root {
-    --font-family-aref: "Aref Ruqaa", serif;
-    --font-family-rajdhani: "Rajdhani", sans-serif;
-    --font-family-source: "Source Code Pro", monospace;
-  }
-  .card { 
-    border-radius: 7px;
-    padding: 7px;
-    width: fit-content;
-    margin: 20px auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.15);
-    z-index: 1;
+.banner-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-container .banner{
+    background:linear-gradient(-55deg, #ff7675 29%, #d63031 29.1%, #d63031 68%, #ff7675 68.1%);
+    border-radius: 5px;
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 10px #0005;
     overflow: hidden;
 }
-.card-body {
-  display: flex;
-  gap: 15px;
+
+
+
+.banner-container .banner .content{
+    flex:1 1 250px;
+    text-align: center;
+    padding:10px;
+    text-transform: uppercase;
 }
-.card-body::after {
-  
-  font-size: 18px;
-  font-family: var(--font-family-rajdhani);
-  font-weight: 600;
-  position: absolute;
-  backdrop-filter: blur(10px);
-  padding: 4px 8px;
-  color: red;
-  transform: scale(0);
-  transition: ease-out 200ms;
+
+.banner-container .banner .content span{
+    color:#eee;
+    font-size: 25px;
 }
-.card-body:hover::after {
-  transform: scale(1);
+
+.banner-container .banner .content h3{
+    color:#fff;
+    font-size: 40px;
 }
-a#ad-card {
-  text-decoration: none;
-  color: #121212;
+
+.banner-container .banner .content p{
+    color:#eee;
+    font-size: 20px;
+    padding:10px 0;
 }
-.card-pic {
-  border-radius: 7px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+
+.banner-container .banner .content .btn{
+    display: block;
+    height:40px;
+    width:150px;
+    line-height: 40px;
+    background: #fff;
+    color:#d63031;
+    margin:5px auto;
+    text-decoration: none;
 }
-.card-describe {
-  line-height: 20px;
+
+.banner-container .banner .women{
+    position: relative;
+    bottom: -33px;
+    padding:10px;
+    flex:1 1 250px;
 }
-.card-describe>p:nth-child(1) {
-  color: red;
-  font-size: 27px;
-  font-family: var(--font-family-rajdhani);
-  font-weight: 600;
+
+.banner-container .banner .women img{
+    width:100%;
 }
-.card-describe>p:nth-child(2) {
-  font-size: 18px;
-  font-family: var(--font-family-aref);
-  font-weight: 500;
+
+@media (max-width:768px){
+    .banner-container .banner .women{
+        display: none;
+    }
 }
-.card-describe>p:nth-child(3) {
-  color: green;
-  font-size: 20px;
-  font-family: var(--font-family-source);
-  font-weight: 500;
-}
-#card-coupon {
-  background-color: red;
-  padding: 4px 8px;
+#btn
+{
+  background-color: #4CAF50; /* Green */
+  border: none;
   color: white;
-  border-radius: 4px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
-.card:hover {
-  transform: scale(1.03);
-}
-.card:active {
-  color: red;
-}
+
+
+  
 
     
