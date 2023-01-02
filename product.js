@@ -79,7 +79,7 @@ function AddAproduct(product,index)
     `
 
     <h5 class="price">`+product.Price+` DH</h5>
-    <button class="detbtn btn" id="detbtn-`+index+`">Voir les détails</button>
+    <button class="detbtn btn" id="detbtn-`+index+`">View Details</button>
     `
 
     let newProd = document.createElement('div');
