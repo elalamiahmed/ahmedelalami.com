@@ -78,7 +78,7 @@ function AddAproduct(product,index)
     +
     `
 
-    <h5 class="price">`+product.Price+` DH</h5>
+    <h5 class="price">`+product.Price+` $</h5>
     <button class="detbtn btn" id="detbtn-`+index+`">View Details</button>
     `
 
