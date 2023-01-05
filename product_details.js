@@ -20,7 +20,7 @@ function Loadproduct()
     document.getElementById('bigimg').src = product.LinksOfImagesArray[0];
     document.getElementById('title').innerHTML = product.ProductTitle;
     document.getElementById('description').innerHTML = product.Description;
-   document.getElementById('price').innerHTML = + product.Price + `&nbsp;` + "DH";
+   document.getElementById('price').innerHTML = + product.Price + `&nbsp;` + "$";
    if(product.Quntite<1)document.getElementById('btnDiv').innerHTML = '<h3 class="text-warning">Out Of Stock</h3>';
    GeneratLi();
    GenImages();
